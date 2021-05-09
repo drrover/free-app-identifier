@@ -1,0 +1,15 @@
+from csv import reader
+
+#Apple Store Dataset
+open_file_apple = open('AppleStore.csv')
+read_file_apple = reader(open_file_apple)
+app_data_apple = list(read_file_apple)
+apple_header = app_data_apple[0]
+apple_data = app_data_apple[1:]
+
+#Google Play Dataset
+open_file_google = open('googleplaystore.csv')
+read_file_google = reader(open_file_google)
+app_data_google = list(read_file_google)
+google_header = app_data_google[0]
+google_data = app_data_google[1:]
